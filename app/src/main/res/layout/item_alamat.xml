@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/buyer_surface"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <!-- Beri ID pada background biar bisa kita ubah warnanya kalau dia alamat utama -->
+    <LinearLayout
+        android:id="@+id/bgItemAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_otp_box"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvLabelAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumah"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/badgeUtama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="#E8DEF8"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:text="Utama"
+                android:textColor="@color/buyer_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNamaPenerima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Budi Santoso | 08123456789"
+            android:textColor="@color/buyer_textPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvAlamatLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Jl. Mawar No 12, Kec. Kota, Kediri\n(Patokan: Cat warna hijau)"
+            android:textColor="@color/buyer_textSecondary"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- Ganti bagian Button btnJadikanUtama yang lama dengan blok LinearLayout ini -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnJadikanUtama"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jadikan Utama"
+                android:textColor="@color/buyer_primary"
+                app:strokeColor="@color/buyer_primary" />
+
+            <!-- Spacer -->
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/btnEditAlamat"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_otp_box"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="@color/buyer_textSecondary" />
+
+            <ImageView
+                android:id="@+id/btnDeleteAlamat"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_otp_box"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_delete"
+                app:tint="#EF4444" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

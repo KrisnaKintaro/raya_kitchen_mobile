@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buyer_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp"
+        android:gravity="center">
+
+        <!-- Logo digedein dikit tapi tetep aman dari keyboard -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/logo_app"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifikasi OTP"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/buyer_textPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvInfoWa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan kode OTP yang dikirim ke WA kamu"
+            android:textSize="16sp"
+            android:textColor="@color/buyer_textSecondary"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Container buat 6 Kotak OTP (Dynamic Weight) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            android:layout_marginBottom="40dp">
+
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_otp_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_otp_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_otp_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_otp_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/otp5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_otp_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/otp6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="4dp"
+                android:background="@drawable/bg_otp_box"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/buyer_textPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Verifikasi"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/buyer_primary"
+            app:cornerRadius="12dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum terima kode? "
+                android:textColor="@color/buyer_textSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim Ulang"
+                android:textStyle="bold"
+                android:textColor="@color/buyer_primary"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

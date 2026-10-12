@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buyer_bg"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnBackRiwayat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/buyer_textPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riwayat Pesanan"
+            android:textColor="@color/buyer_textPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Filter Status (Bisa di-scroll nyamping) -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingVertical="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <Button android:id="@+id/filterSemua" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Semua" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/filterPending" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Belum Bayar" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/filterVerifikasi" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Verifikasi" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/filterDitolak" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Ditolak" android:layout_marginEnd="8dp"/>
+
+            <Button android:id="@+id/filterProses" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Diproses" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/filterDikirim" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Dikirim" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/filterSelesai" style="?attr/materialButtonOutlinedStyle" android:layout_width="wrap_content" android:layout_height="40dp" android:text="Selesai" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvKosongRiwayat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Belum ada pesanan cuy 😢"
+                android:textColor="@color/buyer_textSecondary"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRiwayatPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingVertical="8dp" />
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

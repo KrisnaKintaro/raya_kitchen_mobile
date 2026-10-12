@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna Raya Kitchen -->
+    <color name="buyer_primary">#C099CE</color>
+    <color name="buyer_hover">#9B72AB</color>
+    <color name="buyer_bg">#F8F7FA</color>
+    <color name="buyer_surface">#FFFFFF</color>
+    <color name="buyer_textPrimary">#2D2A32</color>
+    <color name="buyer_textSecondary">#716E77</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

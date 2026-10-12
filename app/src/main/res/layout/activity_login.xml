@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buyer_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_app"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang Kembali"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/buyer_textPrimary"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Input WA -->
+        <EditText
+            android:id="@+id/etWhatsappLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Nomor WhatsApp"
+            android:inputType="phone"
+            android:background="@color/buyer_surface"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/buyer_textPrimary"
+            android:textColorHint="@color/buyer_textSecondary"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ganti bagian Input Password Login jadi seperti ini -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <EditText
+                android:id="@+id/etPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@color/buyer_surface"
+                android:paddingHorizontal="16dp"
+                android:paddingEnd="50dp"
+                android:textColor="@color/buyer_textPrimary"
+                android:textColorHint="@color/buyer_textSecondary"
+                android:elevation="2dp" />
+
+            <ImageView
+                android:id="@+id/ivTogglePasswordLogin"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:padding="16dp"
+                android:elevation="2dp"
+                android:src="@android:drawable/ic_menu_view"
+                app:tint="@color/buyer_textSecondary" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/buyer_primary"
+            app:cornerRadius="12dp" />
+
+        <!-- Teks pindah ke Register -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun? "
+                android:textColor="@color/buyer_textSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar di sini"
+                android:textStyle="bold"
+                android:textColor="@color/buyer_primary"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

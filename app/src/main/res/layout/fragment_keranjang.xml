@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/buyer_bg">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Keranjang Kamu"
+        android:textColor="@color/buyer_textPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvKeranjangKosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Keranjangmu masih kosong nih cuy 😢"
+        android:textColor="@color/buyer_textSecondary"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKeranjang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomCheckout"
+        android:layout_below="@id/tvTitle"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+    <!-- Bottom Bar Checkout -->
+    <LinearLayout
+        android:id="@+id/bottomCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Harga"
+                android:textColor="@color/buyer_textSecondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTotalHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:textColor="@color/buyer_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:text="Checkout"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/buyer_primary"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+</RelativeLayout>

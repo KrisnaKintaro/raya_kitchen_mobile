@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "628321869638",
+    "firebase_url": "https://firestoretest-6c670-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "firestoretest-6c670",
+    "storage_bucket": "firestoretest-6c670.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628321869638:android:81f52262d28f4e7e4b8f47",
+        "android_client_info": {
+          "package_name": "kelompok.satu.raya_kitchen_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtASb8DilNsTkr0A65Gzh-nF8-bfDnpWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628321869638:android:449b990cd0f7e2e64b8f47",
+        "android_client_info": {
+          "package_name": "krisna.kintaro.crud_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtASb8DilNsTkr0A65Gzh-nF8-bfDnpWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628321869638:android:08f0718cb6cfb1d14b8f47",
+        "android_client_info": {
+          "package_name": "krisna.kintaro.crud_firestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtASb8DilNsTkr0A65Gzh-nF8-bfDnpWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628321869638:android:93792477cf54757d4b8f47",
+        "android_client_info": {
+          "package_name": "krisna.kintaro.firebase_pushnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtASb8DilNsTkr0A65Gzh-nF8-bfDnpWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628321869638:android:a0ab896a6bfbde0d4b8f47",
+        "android_client_info": {
+          "package_name": "krisna.kintaro.firestore_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtASb8DilNsTkr0A65Gzh-nF8-bfDnpWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628321869638:android:a97974a0dce2e8a64b8f47",
+        "android_client_info": {
+          "package_name": "krisna.kintaro.storage_supabase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtASb8DilNsTkr0A65Gzh-nF8-bfDnpWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
